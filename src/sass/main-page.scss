@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+html,
+body{
+	font-family: 'Arial', 'sans-serif';
+}
+
+.container{
+	max-width: 1200px;
+	margin:0 auto;
+}
+
+
+@import '_header.scss';
+
+@import '_variables';
+@import '_mixins';
+@import '_responsive';
+
+@import '_sidebar';
+@import '_modals';
+@import '_content';
+
+@import '_footer';
+
