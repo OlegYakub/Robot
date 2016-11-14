@@ -1,4 +1,107 @@
 
+/* ====main-3==== */
+.main-3{
+	padding: 48px 0 63px;
+	.container{
+		.main-3-bot{
+			margin-top: 40px;
+			-webkit-justify-content: space-between;
+			justify-content: space-between;
+				.main-3-bot-item{
+					width: 330px;
+					border: 1px solid #c1c1c1;
+					-webkit-border-radius: 5px;
+					border-radius: 5px;
+					overflow: hidden;
+					 background:#fff;
+ // -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+ //       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+ //            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0), 0 0 40px rgba(0, 0, 0, 0);
+       -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0), 0 0 40px rgba(0, 0, 0, 0);
+            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0), 0 0 40px rgba(0, 0, 0, 0);
+						.main-3-bot__head{
+							background: url("../img/group.png")no-repeat;
+								.main-3-left{
+									margin-left: 29px;
+									img{
+										margin: auto;
+									}
+								}
+								.main-3-right{
+									.main-3-right-item{
+										margin: auto 0 auto 30px;
+											h5{
+												color: #FFF;
+												font-size: 24px;
+												text-transform: uppercase;
+												padding: 10px 0;
+											}
+											h6{
+												font-size: 14px;
+												color: #FFF;
+												padding: 10px 0;
+											}
+									}
+								}
+						}
+						.main-3-bot__cnt{
+							.main-3-cnt__item{
+								margin: 30px auto 0;
+								width: 270px;
+									.ul1-main-3{
+										li{
+											position: relative;
+											color: #393E5E;
+											font: 16px "SegoeUIBold";
+											right: -1ex;
+												&:before{
+													content: "\2043";
+													margin-left: -.5ex;
+													margin-right: .5ex;
+												}
+										}
+									}
+									.ul2-main-3{
+										padding-top: 20px;
+										li{
+											padding: 6px 0;
+											color: #646464;
+											font-size: 16px;
+										}
+									}
+									a{
+								    bottom: -20px;
+									}
+
+							}
+						}
+						.main-3-bot__bot{
+							height: 50px;
+						}
+						.bac-stand{
+							background: url("../img/bac-standart.png")no-repeat;
+							-webkit-background-size: cover;
+							-o-background-size: cover;
+							background-size: cover;
+						}
+						.bac-premium{
+							background: url("../img/bac-premium.png")no-repeat;
+							-webkit-background-size: cover;
+							-o-background-size: cover;
+							background-size: cover;
+						}
+						.bac-vip{
+							background: url("../img/bac-vip_.png")no-repeat;
+							-webkit-background-size: cover;
+							-o-background-size: cover;
+							background-size: cover;
+						}
+				}
+		}
+	}
+
+
 /* ============main-1============ */
 .video-area{
 	float: left;
@@ -95,4 +198,5 @@
 	width: auto;
 	padding: 10px 16px 8px;
 	margin: 20px auto 0;
+
 }
