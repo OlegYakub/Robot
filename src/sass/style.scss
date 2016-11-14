@@ -26,9 +26,7 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 			display: block;
 		}
 }
-img{
-	width: 100%;
-}
+
 .df{
 	display: flex;
 	display: -webkit-flex;
@@ -225,13 +223,81 @@ img{
 	padding-right: 30px;
 }
 
+.logout__link{
+	padding-top: 10px;
+	padding-bottom: 30px;
+	padding-right: 15px;
+	width: 100%;
+	text-align: right;
+	a{
+		font-size: 18px;
+		color: rgb(57, 62, 94);
+	}
 
+	img{
+		position: relative;
+		top: 3px;
+	}
+}
+
+.logout__btn{
+	button{
+		display: inline;
+	}
+
+	img{
+		position: relative;
+    	top: 12px;
+   		right: 8px;
+	}
+
+}
 
 /* =================sidebar===================== */
 
+.tree{
+	padding-top: 30px;
+	li{
+		display: inline;
+	}
+}
 
+.tree__link{
+	font-size: 14px;
+	color: rgb(100, 100, 100);
+ 	text-decoration: underline;
+ 	position: relative;
+ 	padding-right: 24px;
+ 	&:after{
+ 		content:">>";
+ 		position: absolute;
+ 		top: 3px;
+ 		right: 0;
+ 	}
+}
 
+.tree__span{
+	font-size: 14px;
+	color: #49c6cb;
+  	
+}
+
+.keygen-right__head{
+
+}
 
 /* =================footer===================== */
 
 
+.hlebnie {
+  font-size: 14px;
+  font-family: "Segoe UI";
+  color: rgb(100, 100, 100);
+  text-decoration: underline;
+  line-height: 6.071;
+  text-align: left;
+  position: absolute;
+  left: 189px;
+  top: 265.602px;
+  z-index: 344;
+}
