@@ -26,9 +26,6 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 			display: block;
 		}
 }
-img{
-	width: 100%;
-}
 .df{
 	display: flex;
 	display: -webkit-flex;
@@ -38,7 +35,7 @@ img{
 
 .osb40{ /* ========Титулки напр. "ВИДЫ ПОДПИСОК" */
   	font: 40px 'SegoeUILight';
- 	color: rgb(56, 56, 56);
+ 		color: rgb(56, 56, 56);
   	text-align: center;
 }
 
@@ -70,6 +67,9 @@ img{
 	max-width:160px;
 	text-align: center;
 	box-sizing: border-box;
+		&:hover{
+			background: linear-gradient( to top, #23c3eb, #098db3); 
+		}
 }
 .btn-b--blue{ /* ======Для тега <Button> в формах */
 	display:block;
@@ -125,7 +125,7 @@ img{
 .header-top{
 	padding: 12px 0;
 	background-color: #393e5e;
-	
+
 	.container{
 		display: flex;
 		display: -webkit-flex;
@@ -150,7 +150,7 @@ img{
 	.skype{
 		padding-left: 85px;
 	}
-	
+
 }
 
 .header-top__lang{
