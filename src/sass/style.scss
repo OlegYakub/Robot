@@ -298,6 +298,11 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 			font-family: 'SegoeUIBold';
 		}
 	}
+			&:after{
+				content: "";
+				clear: both;
+				display: block;
+			}
 }
 
 .keygen-left{
