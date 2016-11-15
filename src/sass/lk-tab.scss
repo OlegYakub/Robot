@@ -1,0 +1,37 @@
+.keygen-h5{
+	font: 14px "SegoeUIRegular";
+	color: #646464;
+}
+.keygen-p{
+	font: 14px "SegoeUIRegular";
+	color: #000;
+}
+
+
+/* ====svodka==== */
+.svodka{
+	background: #F5F5F5;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	    width: 750px;
+    .svodka-left{
+    	width: 71%;
+    		ul{
+    			li{
+    				padding: 14px 0;
+    				h5{
+    					margin: auto 0;
+    				}
+    			}
+    		}
+    }
+    .svodka-right{
+    	width: 29%;
+    		p{
+    			img{
+    				-webkit-border-radius: 5px;
+    				border-radius: 5px;
+    			}
+    		}
+    }
+}
