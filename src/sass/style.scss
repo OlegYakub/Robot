@@ -288,8 +288,52 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 .keygen-right__head{
 	.balans{
 		float: right;
+		font-size: 30px;
+		color: #383838;
+		font-family: 'SegoeUIlight';
+
+		
+		&--bold{
+			color: #46c5ca;
+			font-family: 'SegoeUIBold';
+		}
 	}
 }
+
+.keygen-left{
+	margin-right: 45px;
+}
+
+.keygen__title{
+	height: 50px;
+	padding-bottom: 25px;
+	display: flex;
+	display: -webkit-flex;
+	
+}
+
+
+
+.aside__link{
+	color: #646464;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: block;
+	padding-top: 18px;
+	padding-left: 21px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #dedede;
+	&--active{
+		background-color: #393e5e;
+		color: #fff;
+	}
+	&:hover{
+		background-color: #484f75;
+		color: #fff;
+	}
+}
+
+
 
 /* =================footer===================== */
 
