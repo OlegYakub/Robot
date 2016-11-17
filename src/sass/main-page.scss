@@ -27,11 +27,11 @@
    			height: 200px;
    			width: 30px;
    			background-color: transparent;
-   			top: 5px;
-   			right: 8px;
-   			z-index: -10;
-   			box-shadow: 12px -9px 19px -3px rgba(0, 0, 0, 0.4); /* 12px -9px 19px -3px rgba(0, 0, 0, 0.2); */
-   			transform: rotate(4deg);
+   			top: 8px;
+    		right: 5px;
+    		z-index: -3;
+   			box-shadow: 12px -9px 7px -3px rgba(0, 0, 0, 0.2);
+    		transform: rotate(3deg);
 	}  
 	 &:after{
 			content: "";
@@ -39,11 +39,11 @@
    			height: 200px;
    			width: 30px;
    			background-color: transparent;
-   			top: 5px;
-   			left: 8px;
-   			z-index: -10;
-   			box-shadow: -12px -9px 19px -3px rgba(0, 0, 0, 0.4);
-   			transform: rotate(-4deg) skew(-4deg); 
+   			top: 8px;
+    		left: 5px;
+    		z-index: -3;
+   			box-shadow: -12px -9px 7px -3px rgba(0, 0, 0, 0.2);
+    		transform: rotate(-3deg);
 	}   
 }
 
@@ -54,12 +54,44 @@
 	color: #ffffff;
 	font-size: 24px;
 	overflow: visible;
+	border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	&:before{
+			content: "";
+    		position: absolute;
+   			height: 97px;
+		    width: 39px;
+		    background-color: transparent;
+		    top: -32px;
+		    right: 71px;
+		    z-index: -3;
+		    box-shadow: -9px -4px 5px 0px rgba(0, 0, 0, 0.2);
+		    -ms-transform: rotate(3deg);
+		    transform: rotate(139deg) skew(50deg);	
+	}  
+	 &:after{
+			content: "";
+    		position: absolute;
+   			height: 97px;
+		    width: 39px;
+		    background-color: transparent;
+		    top: -32px;
+		    left: 71px;
+		    z-index: -3;
+		    box-shadow: 9px -4px 5px 0px rgba(0, 0, 0, 0.2);
+		    -ms-transform: rotate(3deg);
+		    transform: rotate(-139deg) skew(-50deg);
+	}   
 	 
 }
 
 .registr__form{
  	padding: 22px 20px 20px;
  	background-color: #fff;
+ 	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
  	input{
  		margin-bottom: 10px;
  		border-radius: 3px;
@@ -140,7 +172,8 @@
 					border: 1px solid #c1c1c1;
 					-webkit-border-radius: 5px;
 					border-radius: 5px;
-					overflow: hidden;
+					//overflow: hidden;
+					position: relative;
 					 background:#fff;
  // -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
  //       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -148,8 +181,63 @@
     -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0), 0 0 40px rgba(0, 0, 0, 0);
        -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0), 0 0 40px rgba(0, 0, 0, 0);
             box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0), 0 0 40px rgba(0, 0, 0, 0);
+					&:before{
+						content: "";
+			    		position: absolute;
+			   			height: 200px;
+			   			width: 30px;
+			   			background-color: transparent;
+			   			top: 8px;
+			    		right: 5px;
+			    		z-index: -3;
+			   			box-shadow: 12px -9px 7px -3px rgba(0, 0, 0, 0.2);
+			    		transform: rotate(3deg);
+					}  
+					&:after{
+							content: "";
+					    	position: absolute;
+					   		height: 200px;
+					   		width: 30px;
+					   		background-color: transparent;
+					   		top: 8px;
+					    	left: 5px;
+					    	z-index: -3;
+					   		box-shadow: -12px -9px 7px -3px rgba(0, 0, 0, 0.2);
+					    	transform: rotate(-3deg);
+					}   
+
+
 						.main-3-bot__head{
+							border-radius: 5px 5px 0px 0px;
+							-moz-border-radius: 5px 5px 0px 0px;
+							-webkit-border-radius: 5px 5px 0px 0px;
 							background: url("../img/group.png")no-repeat;
+							&:before{
+								content: "";
+					    		position: absolute;
+					   			height: 97px;
+							    width: 39px;
+							    background-color: transparent;
+							    top: -32px;
+							    right: 71px;
+							    z-index: -3;
+							    box-shadow: -9px -4px 5px 0px rgba(0, 0, 0, 0.2);
+							    -ms-transform: rotate(3deg);
+							    transform: rotate(139deg) skew(50deg);	
+							}  
+							&:after{
+									content: "";
+						    		position: absolute;
+						   			height: 97px;
+								    width: 39px;
+								    background-color: transparent;
+								    top: -32px;
+								    left: 71px;
+								    z-index: -3;
+								    box-shadow: 9px -4px 5px 0px rgba(0, 0, 0, 0.2);
+								    -ms-transform: rotate(3deg);
+								    transform: rotate(-139deg) skew(-50deg);
+							}   	
 								.main-3-left{
 									margin-left: 29px;
 									img{
@@ -206,6 +294,9 @@
 						}
 						.main-3-bot__bot{
 							height: 50px;
+							border-radius: 0px 0px 5px 5px;
+							-moz-border-radius: 0px 0px 5px 5px;
+							-webkit-border-radius: 0px 0px 5px 5px;
 						}
 						.bac-stand{
 							background: url("../img/bac-standart.png")no-repeat;
