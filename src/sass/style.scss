@@ -63,13 +63,13 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-top-width: 2px;
-	background: linear-gradient( to top, #098db3, #23c3eb); 
+	background: linear-gradient( to top, #098db3, #23c3eb);
 	color: #000;
 	max-width:160px;
 	text-align: center;
 	box-sizing: border-box;
 		&:hover{
-			background: linear-gradient( to top, #23c3eb, #098db3); 
+			background: linear-gradient( to top, #23c3eb, #098db3);
 		}
 }
 .btn-b--blue{ /* ======Для тега <Button> в формах */
@@ -79,10 +79,13 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 	border: 1px solid #37aeb3;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
-	background: linear-gradient( to top, #098db3, #23c3eb); 
+	background: linear-gradient( to top, #098db3, #23c3eb);
 	color: #000;
 	width: 160px;
 	cursor: pointer;
+		&:hover{
+			background: linear-gradient( to top, #23c3eb, #098db3);
+		}
 }
 
 .btn-a--yellow{ /* ======Для тега <а>  */
@@ -497,21 +500,21 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 			    }
 			}
 	}
-	.footer-center{
-		background: #fff;
-		padding: 45px 0 35px;
-		.container{
-			ul{
-				-webkit-justify-content: space-around;
-				justify-content: space-around;
-				li{
-					img{
-						margin: auto;
-					}
-				}
-			}
-		}
-	}
+	// .footer-center{
+	// 	background: #fff;
+	// 	padding: 45px 0 35px;
+	// 	.container{
+	// 		ul{
+	// 			-webkit-justify-content: space-around;
+	// 			justify-content: space-around;
+	// 			li{
+	// 				img{
+	// 					margin: auto;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
 	.footer-bot{
 		background: #393E5E;
 		padding: 20px 0 15px;

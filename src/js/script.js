@@ -1,3 +1,4 @@
+
 $('.post-slide').slick({
   dots: false,
   arrows: false,
@@ -24,6 +25,35 @@ $('.post-slide').slick({
         slidesToScroll: 1
       }
     }
-   
+
   ]
 });
+
+$( function() {
+  $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+  $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+});
+
+
+
+
+
+
+
+
+
+
+function line() {
+  var a = document.getElementById('line-p');
+  // alert(a);
+  // var b = a.style.width - 1px;
+  a.style.width = a.style.width - '1px';
+};
+
+
+
+
+var butGr = document.getElementById('but-graf');
+
+butGr.onclick = setInterval(line, 2000);
+
