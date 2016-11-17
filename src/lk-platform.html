@@ -6,8 +6,7 @@
 	<title>Личный кабинет</title>
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/main-page.css">
-	<link rel="stylesheet" href="css/slick.css">
+	<link href="css/jquery.formstyler.css" rel="stylesheet" /> 
 	<link rel="stylesheet" href="css/lk-tab.css">
 </head>
 <body>
@@ -15,36 +14,39 @@
 		<div class="header-top">
 			<div class="container">
 				<div class="header-top__lang">
-					<a href="">
+					<a href="" class="lang-icon">
 						<img src="img/lang-icon.png" alt="">
 					</a>
 					<ul class="lang-list">
 						<li class="lang-list__item">
-							<a href="#"><img src="img/England.png" alt="" width="30px"></a>
+							<a href="#"><img src="img/England.png" alt="" width="30px"><span  class="l-name">Eng</span></a>
 						</li>
 						<li class="lang-list__item">
-							<a href="#"><img src="img/France.png" alt="" width="30px"></a>
+							<a href="#"><img src="img/France.png" alt="" width="30px"><span  class="l-name">FRA</span></a> 
 						</li>
 						<li class="lang-list__item">
-							<a href="#"><img src="img/Germany.png" alt="" width="30px"></a>
+							<a href="#"><img src="img/Germany.png" alt="" width="30px"><span  class="l-name">DEU</span></a>
 						</li>
 						<li class="lang-list__item">
-							<a href="#"><img src="img/Indonesia.png" alt="" width="30px"></a>
+							<a href="#"><img src="img/Indonesia.png" alt="" width="30px"><span  class="l-name">IDN</span></a>
 						</li>
 						<li class="lang-list__item">
-							<a href="#"><img src="img/Italy.png" alt="" width="30px"></a>
+							<a href="#"><img src="img/Italy.png" alt="" width="30px"><span  class="l-name">ITA</span></a>
 						</li>
 						<li class="lang-list__item">
-							<a href="#"><img src="img/Poland.png" alt="" width="30px"></a>
+							<a href="#"><img src="img/Poland.png" alt="" width="30px"><span  class="l-name">POL</span></a>
 						</li>
 						<li class="lang-list__item">
-							<a href="#"><img src="img/Russia.png" alt="" width="30px"></a>
+							<a href="#"><img src="img/Russia.png" alt="" width="30px"><span  class="l-name">RUS</span></a>
 						</li>
 						<li class="lang-list__item">
-							<a href="#"><img src="img/Ukraine.png" alt="" width="30px"></a>
+							<a href="#"><img src="img/Ukraine.png" alt="" width="30px"><span  class="l-name">UKR</span></a>
 						</li>
 						<li class="lang-list__item">
-							<a href="#"><img src="img/United_Kingdom.png" alt="" width="30px"></a>
+							<a href="#"><img src="img/United_Kingdom.png" alt="" width="30px"><span  class="l-name">UK</span></a>
+						</li>
+						<li class="lang-list__item">
+							<a href="#"><img src="img/United_States.png" alt="" width="30px"><span  class="l-name">USA</span></a>
 						</li>
 						
 					</ul>
@@ -89,9 +91,9 @@
 							</div>
 							<div class="logout__btn">	
 								<img src="img/grafic-icon.png" alt="">
-								<button type="submit" class="btn-b--yellow">
+								<a href="https://www.fenix-option.com/RU/" type="submit" class="btn-a--yellow">
 									Выход к брокеру  >
-								</button>
+								</a>
 							</div>
 						</div>	
 					</div>	
@@ -109,38 +111,40 @@
 		</div>
 	</div>
 	<div class="keygen">
-		<div class="container df">
+		<div class="container df" id="tabs">
 			<div class="keygen-left">
 				<p class="osb40  keygen__title">Личный кабинет</p>
-				<ul class="aside">
-					<li class="aside__item">
-						<a href="" class="aside__link  aside__link--active">Платформа</a>
-					</li>
-					<li class="aside__item">
-						<a href="" class="aside__link">Сводка</a>
-					</li>
-					<li class="aside__item">
-						<a href="" class="aside__link">Изменить личные данныее</a>
-					</li>
-					<li class="aside__item">
-						<a href="" class="aside__link">Изменить пароль</a>
-					</li>
-					<li class="aside__item">
-						<a href="" class="aside__link">Мои сделки</a>
-					</li>
-					<li class="aside__item">
-						<a href="" class="aside__link">Мой брокер</a>
-					</li>		
-					<li class="aside__item">
-						<a href="" class="aside__link">Верифицировать мой кабинет</a>
-					</li>
-					<li class="aside__item">
-						<a href="" class="aside__link">Связаться с аналитиком</a>
-					</li>
-					<li class="aside__item">
-						<a href="" class="aside__link">Выход</a>
-					</li>
-				</ul>
+				<div>
+					<ul class="aside">
+						<li class="aside__item">
+							<a href="#tabs-2" class="aside__link  aside__link--active">Платформа</a>
+						</li>
+						<li class="aside__item">
+							<a href="#tabs-2" class="aside__link">Сводка</a>
+						</li>
+						<li class="aside__item">
+							<a href="#tabs-2" class="aside__link">Изменить личные данныее</a>
+						</li>
+						<li class="aside__item">
+							<a href="#tabs-2" class="aside__link">Изменить пароль</a>
+						</li>
+						<li class="aside__item">
+							<a href="#tabs-5" class="aside__link">Мои сделки</a>
+						</li>
+						<li class="aside__item">
+							<a href="#tabs-6" class="aside__link">Мой брокер</a>
+						</li>		
+						 <!-- <li class="aside__item">
+						 							<a href="#tabs-7" class="aside__link">Верифицировать мой кабинет</a>
+						 						</li>  -->
+						<li class="aside__item">
+							<a href="#tabs-7" class="aside__link">Связаться с аналитиком</a>
+						</li>
+						<li class="aside__item">
+							<a href="#tabs-7" class="aside__link">Выход</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div class="keygen-right">
 				<div class="keygen-right__head">
@@ -148,94 +152,291 @@
 						<img src="" alt="">
 					</p>
 					<p class="balans">
-						<span>Баланс:</span>
+						<span class="balans--padd">Баланс:</span>
 						<span class="balans--bold">897.00</span>
 						<span class="balans--bold">&#8364;</span>
 					</p>
 				</div>
 				<div class="keygen-right__content">
-					<div class="svodka df">
-						<div class="svodka-left">
-							<ul>
-								<li class="df">
-									<h5 class="keygen-h5">Имя</h5>
-									<p class="keygen-p">Женщина</p>
-								</li>
-								<li class="df">
-									<h5 class="keygen-h5">Фамилия</h5>
-									<p class="keygen-p">В красном</p>
-								</li>
-								<li class="df">
-									<h5 class="keygen-h5">Возраст</h5>
-									<p class="keygen-p">25</p>
-									<h5 class="keygen-h5">Телефон</h5>
-									<p class="keygen-p">+7 000-000-00-00</p>
-								</li>
-								<li class="df">
-									<h5 class="keygen-h5">E-mail</h5>
-									<p class="keygen-p">genschinavkrasnom@mail.ru</p>
-								</li>
-								<li class="df">
-									<h5 class="keygen-h5">Страна</h5>
-									<p class="keygen-p">Россия</p>
-								</li>
-								<li class="df">
-									<h5 class="keygen-h5">Город</h5>
-									<p class="keygen-p">Москва</p>
-								</li>
-								<li class="df">
-									<h5 class="keygen-h5">Номер счета</h5>
-									<p class="keygen-p">2124123</p>
-								</li>
-							</ul>
-						</div>
-						<div class="svodka-right">
-							<p class="df"><img src="img/woman.png" alt=""></p>
+					<div id="tabs-2">
+						<div class="svodka df">
+							<div class="svodka-left">
+								<ul>
+									<li class="df">
+										<h5 class="keygen-h5">Имя</h5>
+										<p class="keygen-p">Женщина</p>
+									</li>
+									<li class="df">
+										<h5 class="keygen-h5">Фамилия</h5>
+										<p class="keygen-p">В красном</p>
+									</li>
+									<li class="df">
+										<h5 class="keygen-h5">Возраст</h5>
+										<p class="keygen-p">25</p>
+										<h5 class="keygen-h5">Телефон</h5>
+										<p class="keygen-p">+7 000-000-00-00</p>
+									</li>
+									<li class="df">
+										<h5 class="keygen-h5">E-mail</h5>
+										<p class="keygen-p">genschinavkrasnom@mail.ru</p>
+									</li>
+									<li class="df">
+										<h5 class="keygen-h5">Страна</h5>
+										<p class="keygen-p">Россия</p>
+									</li>
+									<li class="df">
+										<h5 class="keygen-h5">Город</h5>
+										<p class="keygen-p">Москва</p>
+									</li>
+									<li class="df">
+										<h5 class="keygen-h5">Номер счета</h5>
+										<p class="keygen-p">2124123</p>
+									</li>
+								</ul>
+							</div>
+							<div class="svodka-right">
+								<p class="df"><img src="img/woman.png" alt=""></p>
+							</div>
 						</div>
 					</div>
-				</div>
+					<div id="tabs-5">	
+						<div class="sdelki" >
+							<p class="sdelki__head">
+								Мои сделки:
+							</p>
+							<table class="sdelki__table" cellspacing="1">
+								<thead>
+												<tr>
+													<th>Актив</th>
+													<th>Ставка</th>
+													<th>Время открытия</th>
+													<th>Время экспирации</th>
+													<th>Входящий курс</th>
+													<th>Курс</th>
+													<th>Позиция</th>
+													<th>Статус</th>
+													<th>Выплата</th>
+												</tr>
+											</thead>	
+											<tbody>
+															<tr> <!-- ==========1-колонка======= -->
+																<td>EUR/USD</td>
+																<td>10</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>1.118</td>
+																<td>1.118</td>
+																<td><img src="img/arow-down.png" alt=""></td>
+																<td><span class="won">won</span></td>
+																<td>$10</td>
+															</tr>
+															<tr> <!-- ==========2-колонка======= -->
+																<td>USD/JPY</td>
+																<td>10</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>101.647</td>
+																<td>101.647</td>
+																<td><img src="img/arow-down.png" alt=""></td>
+																<td><span class="won">won</span></td>
+																<td>$10</td>
+															</tr>
+															<tr> <!-- ==========3-колонка======= -->
+																<td>USD/JPY</td>
+																<td>10</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>1.118</td>
+																<td>1.118</td>
+																<td><img src="img/arow-down.png" alt=""></td>
+																<td><span class="won">won</span></td>
+																<td>$10</td>
+															</tr>
+															<tr> <!-- ==========4-колонка======= -->
+																<td>EUR/USD</td>
+																<td>10</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>101.647</td>
+																<td>101.647</td>
+																<td><img src="img/arow-up.png" alt=""></td>
+																<td><span class="won">won</span></td>
+																<td>$10</td>
+															</tr>
+															<tr> <!-- ==========5-колонка======= -->
+																<td>USD/JPY</td>
+																<td>10</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>1.118</td>
+																<td>1.118</td>
+																<td><img src="img/arow-up.png" alt=""></td>
+																<td><span class="won">won</span></td>
+																<td>$10</td>
+															</tr>
+															<tr> <!-- ==========6-колонка======= -->
+																<td>EUR/USD</td>
+																<td>10</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>101.647</td>
+																<td>101.647</td>
+																<td><img src="img/arow-down.png" alt=""></td>
+																<td><span class="lost">lost</span></td>
+																<td>$10</td>
+															</tr>
+															<tr> <!-- ==========7-колонка======= -->
+																<td> EUR/USD</td>
+																<td>10</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>101.647</td>
+																<td>101.647</td>
+																<td><img src="img/arow-up.png" alt=""></td>
+																<td><span class="lost">lost</span></td>
+																<td>$10</td>
+															</tr>
+															<tr> <!-- ==========8-колонка======= -->
+																<td>USD/JPY</td>
+																<td>10</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>1.118</td>
+																<td>1.118</td>
+																<td><img src="img/arow-up.png" alt=""></td>
+																<td><span class="lost">lost</span></td>
+																<td>$10</td>
+															</tr>
+															<tr> <!-- ==========9-колонка======= -->
+																<td>USD/JPY</td>
+																<td>10</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>2016-08-25 11:29:00</td>
+																<td>101.647</td>
+																<td>101.647</td>
+																<td><img src="img/arow-up.png" alt=""></td>
+																<td><span class="lost">lost</span></td>
+																<td>$10</td>
+															</tr>
+														</tbody>			
+							</table>
+						</div>
+					</div>
+					 <div id="tabs-6">
+					 	<div class="wrapper-broker">
+							<div class="broker">
+								<!-- <div class="b-header">
+									<div class="b-header__top">
+										<div class="b-header__logo">
+											<img src="img/logo-fenix.png" alt="">
+										</div>
+										<ul class="b-header__nav">
+											<li>
+												<a href="https://www.fenix-option.com/RU/"
+												class="b-header__link">Главная</a>
+											</li>
+											<li>
+												<a href="https://www.fenix-option.com/RU/Trading-Area" class="b-header__link">Платформа</a>
+											</li>
+											<li>
+												<a href="https://www.fenix-option.com/RU/Page1/" class="b-header__link">Виды счетов</a>
+											</li>
+											<li>	
+												<a href="https://www.fenix-option.com/RU/Contact/" class="b-header__link">Связаться с нами</a>
+											</li>
+										</ul>
+									</div>
+									<div class="b-header__bot">
+										<div class="b-header__inf">
+											
+										</div>
+										<div class="b-header__btns">
+											
+										</div>
+									</div>
+								</div> -->
+								<iframe src="https://www.fenix-option.com/RU/Banking/CC-Deposit" frameborder="0" width="100%" height="100%"></iframe>
+							</div>
+						</div>
+					</div> 
+					 <!-- <div id="tabs-7">	
+					 						<div class="veref"  >
+					 							<div class="veref__title">
+					 								Подтвердите Ваш счет!
+					 							</div>
+					 							<div class="veref__desc">
+					 								Для того, чтобы иметь полный контроль над своим счетом Вы должны подтвердить его с этими документами.
+					 							</div>
+					 							<form action="">
+					 								<div class="veref__row  df">
+					 									<div class="veref__name  one">
+					 										Удостоверение личности с фотонрафией
+					 									</div>
+					 									<div class="veref__select">
+					 										
+					 										<select name="" id="" class="select">
+					 											<option>Паспорт</option>
+					 											<option>Водительское удостоверение</option>
+					 										</select> 
+					 										
+					 									</div>
+					 									<div class="veref__file">
+					 										<label for="identif" class="look">Загрузить документ</label>
+					 										<input type="file" id="identif">
+					 											<span class="upload">Загружен</span>
+					 											<button >Удалить</button>
+					 									</div>	
+					 								</div>
+					 								<div class="veref__row  df">
+					 									<div class="veref__name  two">
+					 										Подтверждение адреса прописки
+					 									</div>
+					 									<div class="veref__select">
+					 										
+					 										<select name="" id="" class="select">
+					 											<option>Счет за коммунальные услуги</option>
+					 											<option>Счет за интернет</option>
+					 										</select> 
+					 										
+					 									</div>
+					 									<div class="veref__file">
+					 										<label for="identif" class="look">Загрузить документ</label>
+					 										<input type="file" id="identif">
+					 											<span class="upload">Загружен</span>
+					 											<span class="unload">Не загружен</span>
+					 											<button >Удалить</button>
+					 									</div>	
+					 								</div>
+					 								<div class="veref__row  df">
+					 									<div class="veref__name  three">
+					 										Закройте первые 12 цифр с левой стороны и CVV
+					 									</div>
+					 									<div class="veref__select">
+					 										
+					 										<select name="" id="" class="select">
+					 											<option>Кредитная карта</option>
+					 											<option>Водительское удостоверение</option>
+					 										</select> 
+					 										
+					 									</div>
+					 									<div class="veref__file">
+					 										<label for="identif" class="look">Загрузить документ</label>
+					 										<input type="file" id="identif">
+					 											<span class="upload">Загружен</span>
+					 											<button >Удалить</button>
+					 									</div>	
+					 								</div>
+					 								<div class="veref__submr">
+					 									<button class="btn-b--blue">Отправить</button>
+					 								</div>
+					 							</form>	
+					 						</div>
+					 					</div>	 -->
+				
 			</div>
+			
 		</div>
 	</div>
-
-
-	<div class="footer">
-			<div class="footer-top">
-				<div class="container df">
-					<div class="foot-left df">
-						<ul>
-							<li><a href="">Виды подписок</a></li>
-							<li><a href="">Инструкция</a></li>
-							<li><a href="">Новости</a></li>
-							<li><a href="">Партнерам</a></li>
-							<li><a href="">Связаться с нами</a></li>
-						</ul>
-					</div>
-					<div class="foot-center">
-						<form>
-							<p class="df"><input type="search" name="q" placeholder="Поиск по сайту">
-							<button class="df"><img src="img/search.svg" alt=""></button></p>
-						</form>
-						<ul>
-							<li>Работаем с 10:00 до 19:00</li>
-							<li><img src="img/phone-call.svg" alt="">1-800-546-654</li>
-							<li><img src="img/telegram-logo.svg" alt=""><a href="">hello@fenixforex.com</a></li>
-						</ul>
-					</div>
-					<div class="foot-right">
-						<a href="" class="foot-r-a df"><img src="img/telephone.svg" alt=""><span>Помощь консультанта</span></a>
-						<div class="consul">
-							<a href=""><span>Консультант он-лайн</span></a>
-							<p><span>Адрес</span></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-bot">
-				<div class="container">
-					<p>&#169; Formyla-yspexa, 2016. Все права защищены</p>
-				</div>
-			</div>	
 
 	<div class="footer">
 		<div class="footer-top">
@@ -274,10 +475,11 @@
 				<p>&#169; Formyla-yspexa, 2016. Все права защищены</p>
 			</div>
 		</div>	
-
 	</div>
 	<script src="js/jquery-2.2.3.min.js"></script>
-	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

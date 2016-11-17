@@ -20,8 +20,31 @@
 	border-radius: 5px;
 	box-shadow: 0 20px 23px -12px rgba(0, 0, 0, 0.5);
 	position: relative;
-	overflow: hidden;
-	
+	//overflow: hidden;
+	&:before{
+			content: "";
+    		position: absolute;
+   			height: 200px;
+   			width: 30px;
+   			background-color: transparent;
+   			top: 5px;
+   			right: 8px;
+   			z-index: -10;
+   			box-shadow: 12px -9px 19px -3px rgba(0, 0, 0, 0.4); /* 12px -9px 19px -3px rgba(0, 0, 0, 0.2); */
+   			transform: rotate(4deg);
+	}  
+	 &:after{
+			content: "";
+    		position: absolute;
+   			height: 200px;
+   			width: 30px;
+   			background-color: transparent;
+   			top: 5px;
+   			left: 8px;
+   			z-index: -10;
+   			box-shadow: -12px -9px 19px -3px rgba(0, 0, 0, 0.4);
+   			transform: rotate(-4deg) skew(-4deg); 
+	}   
 }
 
 .registr__head{
@@ -31,34 +54,12 @@
 	color: #ffffff;
 	font-size: 24px;
 	overflow: visible;
-	 /* &:before{
-			content: "";
-    		position: absolute;
-   			height: 200px;
-   			width: 30px;
-   			background-color: transparent;
-   			top: 5px;
-   			right: 8px;
-   			z-index: -2;
-   			box-shadow: 12px -9px 19px -3px rgba(0, 0, 0, 0.4); /* 12px -9px 19px -3px rgba(0, 0, 0, 0.2); */
-   			/*  transform: rotate(4deg);
-	}  */
-	/*  &:after{
-			content: "";
-    		position: absolute;
-   			height: 200px;
-   			width: 30px;
-   			background-color: transparent;
-   			top: 5px;
-   			left: 8px;
-   			z-index: -2;
-   			box-shadow: -12px -9px 19px -3px rgba(0, 0, 0, 0.4);
-   			transform: rotate(-4deg);
-	}   */ 
+	 
 }
 
 .registr__form{
  	padding: 22px 20px 20px;
+ 	background-color: #fff;
  	input{
  		margin-bottom: 10px;
  		border-radius: 3px;

@@ -154,6 +154,36 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 
 }
 
+.lang-list__item{
+		padding: 2px;
+		display: block;
+		width: 70px;
+		margin: 5px;
+		border-radius: 15px;
+		background-color: #393e5e;
+		opacity: 0.8;
+		border: 1px solid #646464;
+		&:hover{
+			opacity: 1;
+			transition: .15s;
+			transform: scale(1.1);
+			
+		}
+
+		img{
+			display: inline;
+		}
+
+		.l-name{
+			padding-left: 5px;
+			position: relative;
+			bottom: 8px;
+			font-weight: bold;
+			color: #fff;
+			text-transform: uppercase;
+		}
+}
+
 .header-top__lang{
 	position: relative;
 }
@@ -161,10 +191,14 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 .lang-list{
 	position: absolute;
 	z-index:1;
-	background-color:#393e5e;
-	padding: 5px;
-	border-radius: 25px;
-	display: none;
+	
+	left: -9999px;
+	
+}
+
+.header-top__lang:hover  .lang-list{
+	left: -5px;
+	
 }
 
 .header-main{
@@ -244,7 +278,7 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 }
 
 .logout__btn{
-	button{
+	button, a{
 		display: inline;
 	}
 
@@ -291,18 +325,24 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 		font-size: 30px;
 		color: #383838;
 		font-family: 'SegoeUIlight';
-
-		
+		height: 60px;
+   		padding-bottom: 25px;
+   		display: flex;
+   		display: -webkit-flex;
+		align-items: flex-end;
 		&--bold{
 			color: #46c5ca;
 			font-family: 'SegoeUIBold';
 		}
+		&--padd{
+			padding-right: 15px;
+		}
 	}
-			&:after{
-				content: "";
-				clear: both;
-				display: block;
-			}
+	&:after{
+		content: "";
+		clear: both;
+		display: block;
+	}
 }
 
 .keygen-left{
@@ -310,24 +350,24 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 }
 
 .keygen__title{
-	height: 50px;
+	padding-top: 10px;
 	padding-bottom: 25px;
-	display: flex;
-	display: -webkit-flex;
-	
 }
 
-
+.aside__item:first-of-type{
+		border-top: 1px solid #dedede;
+	}
 
 .aside__link{
 	color: #646464;
 	font-size: 16px;
 	text-transform: uppercase;
 	display: block;
-	padding-top: 18px;
+	padding-top: 13px;
 	padding-left: 21px;
-	padding-bottom: 8px;
+	padding-bottom: 13px;
 	border-bottom: 1px solid #dedede;
+	
 	&--active{
 		background-color: #393e5e;
 		color: #fff;
