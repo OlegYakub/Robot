@@ -4,7 +4,7 @@
 }
 .video-area{
 	float: left;
-	width: 68%;
+	width: 64%;
 	max-width: 700px;
 	margin-top: 27px;
 	height: 398px;
@@ -118,9 +118,11 @@
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	padding-bottom: 17px;
 }
 
 .refistr__footer input{
+
 	width: auto;
 	position: absolute;
 	left: -9999px;
@@ -150,13 +152,6 @@
 
 .refist-a{
 	font-size: 14px;
-}
-
-.refistr__sub{
-	width: auto;
-	padding: 10px 16px 8px;
-	margin: 20px auto 0;
-
 }
 
 /* ====main-3==== */
@@ -398,11 +393,61 @@
 
 .refistr__sub{
 	width: auto;
-	padding: 10px 16px 8px;
+	padding: 12px 24px 10px;
 	margin: 20px auto 0;
-
+	color: #09455C;	
+		
 }
 
+.anim{
+	transition-timing-function: cubic-bezier(0,0,0,.99);
+	background-image: none;
+	background-color: #0ba1d8;
+	animation: btn-bg 2s linear infinite;
+	color: #e8eaea;
+	&:hover{
+			background-image: none;
+			background-color: #0ba1d8;
+			animation-name: spin;
+			animation-duration: .7s;
+			animation-iteration-count: 1;
+			-webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.54);
+			-moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.54);
+			box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.54);
+
+		}
+}
+
+.main-reg-btn{
+	width: 300px;
+	border-top-width: 1px;
+	max-width: none;
+	padding: 18px 32px 16px;
+	color: #e8eaea;	
+	font-size: 18px;
+
+}
+@keyframes spin{
+	0%{
+		transform: scale(1);
+
+	}
+	30%{
+		transform: scale(1.15);
+	}	
+	100%{
+		transform: scale(1);
+		
+	}
+}
+
+@keyframes btn-bg{
+	0%{background-color: #057199;}
+	30%{background-color: #2db8df;}
+	50{background-color: #1cb8f0;}
+	70{background-color: #0ba1d8;}
+	100%{background-color: #057199;}
+}
 /* ============main-2============ */
 
 .main-2{
@@ -432,3 +477,8 @@
 }
 
 
+/* ==========header=========== */
+
+.header-nav__list{
+	padding-left: 70px;
+}

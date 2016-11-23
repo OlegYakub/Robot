@@ -99,7 +99,9 @@
 
 
 /* ====sdelki==== */
-
+.sdelki__table{
+  margin: 0 auto;
+}
 .sdelki{
     background: #F5F5F5;
     -webkit-border-radius: 10px;
@@ -122,7 +124,7 @@
             text-align: center;
             vertical-align: middle;
             color: #fff;
-            padding: 8px 9px;
+            padding: 8px 7px;
             font-weight: 300;
             //border: 1px solid #dedede;
         }
@@ -278,10 +280,10 @@
 .broker{
     -webkit-border-radius: 10px;
     border-radius: 5px;
-    width: 990px;
+    //width: 990px;
     height: 1250px  ;
-    transform: scale(0.7349)  translateX(-179px) translateY(-218px);
-    margin-bottom: -324px;
+    //transform: scale(0.7349)  translateX(-179px) translateY(-218px);
+    //margin-bottom: -324px;
 } 
 
 
@@ -395,6 +397,10 @@
       }
   }
 }
+
+.change__btn-sub{
+  margin-top: 65px;
+}
 /* ====change-password===== */
 .change-password{
   height: 440px;
@@ -419,7 +425,8 @@
     }
     button{
       color: #09455C;
-      margin-top: 30px;
+      float: right;
+      margin-right: 35px;
     }
   }
 }
@@ -476,8 +483,14 @@
     }
   }
 }
+
+.analist__btn{
+  margin-top: 160px;
+
+}
 /* ====platforma===== */
 .platforma{
+  width: 725px;
   .platforma-item{
     margin-top: 4px;
       .platforma-left{
@@ -498,7 +511,7 @@
                 }
           }
           .grafic{
-            width: 460px;
+            width: 487px;
             height: 180px;
             margin: 15px 0;
           }
@@ -546,7 +559,7 @@
                     position: relative;
                     top: 11px;
                     left: 7px;
-                    background: #46C5CA;
+                    background: #ea1111;
                     width: 165px;
                     height: 6px;
                     -webkit-border-radius: 3px;
@@ -627,8 +640,19 @@
               font-size: 16px;
             }
             .btn-a--blue{
-              max-width: 110px;
-              margin: auto 0 auto auto;
+              background: linear-gradient(to top, #ea1111, #d23a3a);
+              margin:  0 auto;
+              border: 1px solid #d23a3a;
+              color: #fff;
+              &:hover{
+                background: linear-gradient(to top, #d23a3a, #ea1111);
+                animation-name: spin;
+                animation-duration: .7s;
+                animation-iteration-count: 1;
+                -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.54);
+                -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.54);
+                box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.54);
+              }
             }
             .direct{
               margin-bottom: 35px;
@@ -701,3 +725,36 @@
   }
 }
 
+/* ============header============= */
+
+.header-logo{
+  margin-top: 23px;
+}
+
+/* ============animation============*/
+
+.anim-lk{
+  &:hover{
+                ;
+                animation-name: spin;
+                animation-duration: .7s;
+                animation-iteration-count: 1;
+                -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.54);
+                -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.54);
+                box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.54);
+              }
+}
+
+@keyframes spin{
+  0%{
+    transform: scale(1);
+
+  }
+  30%{
+    transform: scale(1.15);
+  } 
+  100%{
+    transform: scale(1);
+    
+  }
+}

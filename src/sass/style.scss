@@ -150,9 +150,13 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 	.tel{
 		padding-right: 10px;
 	}
+	
+	.mail{
+		padding-left: 60px;
+	}
 
 	.skype{
-		padding-left: 85px;
+		padding-left: 5px;
 	}
 
 }
@@ -204,6 +208,8 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 	
 }
 
+
+
 .header-main{
 	display: flex;
 	display: -webkit-flex;
@@ -213,10 +219,9 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 	.header-logo__slog{
 		font-size: 14px;
 		color: rgb(57, 62, 94);
-  		padding-top: 10px;
-  		display: inline-block;
-  		text-align: right;
-  		vertical-align: top;
+		position: relative;
+		top: 13px;
+		padding-left: 100px;
   		.header-logo__name{
   			font-size: 36px;
   			font-family: 'SegoeUIBold';
@@ -281,6 +286,7 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 }
 
 .logout__btn{
+	margin-bottom: 22px;
 	button, a{
 		display: inline;
 	}
@@ -293,6 +299,29 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 
 }
 
+.brok-btn{
+	padding: 10px 32px;
+
+}
+
+/* ===============Бегущая строка=================== */
+.marquee{
+	padding-top: 5px;
+	 width: 560px;
+  	overflow: hidden;
+ 	 background: #393e5e;
+ 	 li{
+ 	 	display: inline-block;
+ 	 	padding-right: 30px;
+ 	 }
+}
+
+.ticker__curr,
+.ticker__quan{
+	color: #fff;
+	padding-bottom: 3px;
+	text-transform: uppercase;
+}
 /* =================sidebar===================== */
 
 .tree{
@@ -341,6 +370,16 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 			padding-right: 15px;
 		}
 	}
+
+	.rebus{
+		display: -ms-flexbox;
+    	display: -webkit-flex;
+    	display: flex;
+    	-ms-flex-align: end;
+    	align-items: flex-end;
+		float: left;
+		height: 60px;
+	}
 	&:after{
 		content: "";
 		clear: both;
@@ -349,6 +388,7 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 }
 
 .keygen-left{
+	//display: none;
 	margin-right: 45px;
 }
 
@@ -381,7 +421,32 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 	}
 }
 
+.show-menu{
+	display: none;
+	border: 2px solid #37aeb3;
+	text-align: center;
+	color: #37aeb3;
+	border-radius: 5px;
+	font-weight: bold;
+	padding: 5px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+	margin-right: 15px;
+	width: 165px;
+	cursor: pointer;
+	float: left;
+	/* position: absolute;
+	top: 0;
+	left: 0; */
+	span{
+		padding-right: 10px;
+	}
+	img{
+		position: relative;
+		top: 5px;
 
+	}
+}
 
 /* =================footer===================== */
 
@@ -391,27 +456,9 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 		padding: 55px 0;
 			.container{
 			    .foot-left{
-			    	margin-right: 125px;
-			    	ul{
-			    		li{
-			    			margin: 24px 0;
-			    			&:first-child{
-			    				margin-top: 0;
-			    			}
-			    			&:last-child{
-			    				margin-bottom: 0;
-			    			}
-			    			a{
-			    				font: 18px "SegoeUIRegular";
-			    				color: #FFF;
-			    				text-decoration: underline;
-			    			}
-			    		}
-			    	}
-			    }
-			    .foot-center{
-			    	margin-right: 73px;
-	    			form{
+			    	
+			    	margin-right: 9.12%;
+			    	form{
 	    				width: 240px;
 	    				p{
 	    					position: relative;
@@ -448,8 +495,29 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 	    				}
 	    			}
 			    	ul{
-			    		width: 240px;
 			    		margin-top: 60px;
+			    		li{
+			    			margin: 24px 0;
+			    			&:first-child{
+			    				margin-top: 0;
+			    			}
+			    			&:last-child{
+			    				margin-bottom: 0;
+			    			}
+			    			a{
+			    				font: 18px "SegoeUIRegular";
+			    				color: #FFF;
+			    				text-decoration: underline;
+			    			}
+			    		}
+			    	}
+			    }
+			    .foot-center{
+			    	margin-right: 73px;
+	    			
+			    	ul{
+			    		width: 240px;
+			    		margin-top: 95px;
 			    		li, a{
 			    			font: 18px "SegoeUIRegular";
 			    			color: #FFF;
@@ -524,7 +592,7 @@ html, body{font: 400 16px/1.1 'SegoeUIRegular', sans-serif}
 			    			-webkit-box-sizing: border-box;
 			    			-moz-box-sizing: border-box;
 			    			box-sizing: border-box;
-			    			width: 480px;
+			    			width: 32vw;
 			    			height: 65px;
 			    			-webkit-border-radius: 5px;
 			    			border-radius: 5px;
