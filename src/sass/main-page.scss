@@ -502,6 +502,9 @@
 	display: none; 
 	opacity: 0; 
 	z-index: 5;
+	-webkit-box-shadow: 0px 9px 5px -2px rgba(0,0,0,0.33);
+	-moz-box-shadow: 0px 9px 5px -2px rgba(0,0,0,0.33);
+	box-shadow: 0px 9px 5px -2px rgba(0,0,0,0.33);
 	.close{
 		a{
 			display: block;			
