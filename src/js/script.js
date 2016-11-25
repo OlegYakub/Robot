@@ -112,6 +112,23 @@ $(document).ready(function(){
 });
 //$('.select').styler();  
 
+/*==============popup-reg=====================*/
 
-
-
+$('#reg').click(function(){
+  $('.popup-reg__wrapper').fadeIn(400,
+      function(){
+        $('.popup-reg') 
+          .css('display', 'flex')
+          .animate({opacity: 1, top: '10%'}, 200);
+      });
+ 
+});
+$('.close a').click( function(){ 
+    $('.popup-reg')
+      .animate({opacity: 0, top: '5%'}, 200,  
+        function(){ 
+          $(this).css('display', 'none'); 
+          $('.popup-reg__wrapper').fadeOut(400);
+        }
+      );
+  });
